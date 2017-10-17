@@ -99,11 +99,11 @@ Azure Container Instances (ACI) makes it easy for you to get up and running with
 2. Scroll to the bottom of the page and find the **Cloud** section with the  **Add new cloud** dropdown and choose **Azure Container Instance**.
 ![Add new cloud](./media/cloud-aci.png)
 3. Select 'mySP(Azure service principal)' from the **Azure Service Principal** dropdown. 
-4. In the **Resource Group Name** section, select 'myJenkinsAgentGroup'.
-5. Under **Aci container Template**, enter "ACI-container" for both **Name** and **Labels**.
-6. Enter 'cloudbees/jnlp-slave-with-java-build-tools' for **Docker Image**.
+4. In the **Resource Group Name** section, select `myJenkinsAgentGroup`.
+5. Under **Aci container Template**, enter `ACI-container` for both **Name** and **Labels**.
+6. Enter `cloudbees/jnlp-slave-with-java-build-tools` for **Docker Image**.
 ![Configure ACI Agent](./media/agent-config.png)
-7. Click **Advanced** to expand advance settings and update **Retention Strategy** to 'Container Idle Retention Strategy' to keep the agent up for until no new job is executed on the agent and the idle time specified has elapsed.
+7. Click **Advanced** to expand advance settings and update **Retention Strategy** to `Container Idle Retention Strategy` to keep the agent up for until no new job is executed on the agent and the idle time specified has elapsed.
 8. Select **Save** to update the plugin configuration.
 
 <br>
