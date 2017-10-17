@@ -25,10 +25,7 @@ Use Azure Container agent to add on-demand capacity and use [Azure Container Ins
 
 3. Make sure you update the Jenkins DNS name in **Managed Jenkins** -> **Configure System** -> **Administrative monitors configuration** -> **Jenkins URL** 
 
-4. Since the slave/agent connects with master via JNLP, make sure JNPL is allowed. In Jenkins, under **Configure Global Security** -> **TCP port for JNPL agents** - select "Fixed" use say 12345.
-
-![Jenkins JNLP](./media/jenkins-jnlp.png)
-
+4. Since the slave/agent connects with master via JNLP, make sure JNPL is allowed. In Jenkins, under **Configure Global Security** -> **TCP port for JNPL agents** - select "Fixed" use say 12345. ![Jenkins JNLP](./media/jenkins-jnlp.png)
 Make sure you add an inbound security rule for the Jenkins master. In Azure, you need to add the rule in the Network Security Group for the Jenkins master:
 ![JNLP port](./media/jnlp-port.png)
 
