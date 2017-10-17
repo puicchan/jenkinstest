@@ -127,7 +127,7 @@ Azure Container Instances (ACI) makes it easy for you to get up and running with
 1. Go back to the Jenkins dashboard.
 2. Select the job you created in the previous step, then click **Build now**. A new build is queued, but does not start until an ACI agent is created in your Azure subscription. A new ACI agent will appear on the Jenkins dashboard within seconds. 
 ![ACI agent](./media/aci.png)
-The job will start building in about 5 minutes after the agent is created. If you rerun the build, the job will start building immediately. 
+The job will start building in about 4 minutes after the agent is created. If you rerun the build, the job starts building immediately since the agent has already been created and is online.
 
 3. Once the build is complete, go to **Console output**. Click **Full log** to see that the build was performed remotely on an Azure agent.
 ![Console output](./media/console-output.png)
