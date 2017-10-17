@@ -72,7 +72,7 @@ Make sure you add an inbound security rule for the Jenkins master. In Azure, you
      
      Enter your subscription ID. Use the `appId` value for **Client ID**, `password` for **Client Secret**, and a URL for **OAuth 2.0 Token Endpoint** of `https://login.windows.net/<tenant_value>`. 
      
-     Provide "mySP" as the ID for this crediatial and provide a description.
+     Provide "mySP" as the **ID** for this crediatial and enter "Azure service principal" for **description**.
 
      ![Set up credential](./media/credential.png)
 
@@ -96,12 +96,12 @@ Azure Container Instances (ACI) makes it easy for you to get up and running with
 ## Configure the Azure Container Agents plugin
 
 1. From the Jenkins dashboard, select **Manage Jenkins**, then **Configure System**.
-2. Scroll to the bottom of the page and find the **Cloud** section with the  **Add new cloud** dropdown and choose **Azure Credential Instance**.
+2. Scroll to the bottom of the page and find the **Cloud** section with the  **Add new cloud** dropdown and choose **Azure Container Instance**.
 ![Add new cloud](./media/cloud-aci.png)
-3. Select "mySP" from the **Azure Service Principal** dropdown. 
-4. In the **Resource Group Name** section, select `myJenkinsAgentGroup`.
-5. Under **Aci container Template**, enter "ACI-container" for both Name and Labels.
-6. Enter "cloudbees/jnlp-slave-with-java-build-tools" for Docker Image.
+3. Select 'mySP(Azure service principal)' from the **Azure Service Principal** dropdown. 
+4. In the **Resource Group Name** section, select 'myJenkinsAgentGroup'.
+5. Under **Aci container Template**, enter "ACI-container" for both **Name** and **Labels**.
+6. Enter "cloudbees/jnlp-slave-with-java-build-tools" for **Docker Image**.
 ![Configure ACI Agent](./media/agent-config.png)
 5. Select **Save** to update the plugin configuration.
 
@@ -124,7 +124,7 @@ Azure Container Instances (ACI) makes it easy for you to get up and running with
 ## Build the new job on an Azure Container agent
 
 1. Go back to the Jenkins dashboard.
-2. Select the job you created in the previous step, then click **Build now**. A new build is queued, but does not start until an ACI agent  is created in your Azure subscription.
+2. Select the job you created in the previous step, then click **Build now**. A new build is queued, but does not start until an ACI agent is created in your Azure subscription.
 3. Once the build is complete, go to **Console output**. Click **Full log** to see that the build was performed remotely on an Azure agent.
 ![Console output](./media/console-output.png)
 
