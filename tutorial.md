@@ -17,7 +17,7 @@ Use Azure Container agent to add on-demand capacity and use [Azure Container Ins
 # Prerequisuites
 
 1. If you don't have an Azure subscription, create a free account before you begin. <br/>
-<a class="tutorial-next-btn" style="background-color:#68217A" href="https://azure.microsoft.com/pricing/free-trial/" target="_blank">Create your free Azure account</a>
+<a class="tutorial-next-btn" href="https://azure.microsoft.com/pricing/free-trial/" target="_blank">Create your free Azure account</a>
 
 
 2. A Jenkins master server. If you don't have one, view the quickstart to set up one in Azure. <br/>
