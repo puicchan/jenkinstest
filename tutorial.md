@@ -55,10 +55,10 @@ Make sure you add an inbound security rule for the Jenkins master. In Azure, you
 ## Install the Azure plugins
 
 > [!TIP]
-> If you deployed Jenkins on Azure using the [solution template](install-jenkins-solution-template.md), the [Azure Credential Plugin] (https://plugins.jenkins.io/azure-credentials) and [Azure Container Agents](https://plugins.jenkins.io/azure-container-agents) are already installed.
+> If you deployed Jenkins on Azure using the [solution template](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template.md), the [Azure Credential Plugin](https://plugins.jenkins.io/azure-credentials) and [Azure Container Agents](https://plugins.jenkins.io/azure-container-agents) are already installed.
 
 1. From the Jenkins dashboard, select **Manage Jenkins**, then select **Manage Plugins**.
-2. Select the **Available** tab, then search for **Azure Credentials** and **Azure Container Agents Plugin**. Select the checkbox next to the entry for the plugin and select **Install without restart** from the bottom of the dashboard.
+2. Select the **Available** tab, then search for **Azure Credentials** and **Azure Container Agents Plugin**. Select the checkbox next to the entry for each of the plugin and select **Install without restart** from the bottom of the dashboard.
 
 ## Add Azure service principal to Jenkins
 1. From the Jenkins dashboard, select **Credentials**
@@ -76,13 +76,13 @@ Make sure you add an inbound security rule for the Jenkins master. In Azure, you
 
      ![Set up credential](./media/credential.png)
 
-    Verify the service principal authenticates with Azure by selecting **Verify Service Principal**
+    Verify the service principal authenticates with Azure by clicking **Verify Service Principal**
     
     <br>
     <a class="tutorial-issue-btn" onclick="reportIssue('/Java/hello-world/', 'deploy');logClick('/Java/hello-world/deploy-issuereport');" href="javascript:void(0)">I ran into an issue</a>&nbsp; &nbsp; &nbsp; &nbsp;<a class="tutorial-next-btn" onclick="logClick('/Java/hello-world/deploy-completed')" href="finished.html">I have added Azure Service principal in Jenkins</a>
 
 ## Create a resource group for Azure Container Instances
-Azure Container Instances (ACI) makes it easy for you to get up and running without having to provision virtual machines or adopt a higher-level service. ACI must be placed in an Azure resource group. Create a resource group with the az group create command.  
+Azure Container Instances (ACI) makes it easy for you to get up and running without having to provision virtual machines or adopt a higher-level service. ACI must be placed in an Azure resource group. Create a resource group in **eastus** with the az group create command.  
 
 1. In Cloud Shell:
      
