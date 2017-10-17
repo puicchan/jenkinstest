@@ -8,7 +8,7 @@ This quickstart shows you how to spin up a container agent in Azure in your exis
 
 # Scenario
 
-Use Azure Container agent to add on-demand capacity and use [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/) to build the Spring PetClinit Sample Applicaiton.
+Use Azure Container agent to add on-demand capacity and use [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/) to build the Spring PetClinic Sample Applicaiton.
 
 <br>
 <a class="tutorial-next-btn" style="background-color:#68217A" onclick="logClick('/Jenkins/aaa/introduction-completed')" href="something.md">Let's get started!</a>
@@ -25,7 +25,7 @@ Use Azure Container agent to add on-demand capacity and use [Azure Container Ins
 
 3. Make sure you update the Jenkins DNS name in **Managed Jenkins** -> **Configure System** -> **Administrative monitors configuration** -> **Jenkins URL** 
 
-4. Since the slave/agent connects with master via JNLP, make sure JNPL is allowed. In Jenkins, under **Configure Global Security** -> **TCP port for JNPL agents** - select "Fixed" use say 12345. ![Jenkins JNLP](./media/jenkins-jnlp.png)
+4. Since the slave/agent connects with master via JNLP, make sure JNLP is allowed. In Jenkins, under **Configure Global Security** -> **TCP port for JNLP agents** - select "Fixed" use say 12345. ![Jenkins JNLP](./media/jenkins-jnlp.png)
 Make sure you add an inbound security rule for the Jenkins master. In Azure, you need to add the rule in the Network Security Group for the Jenkins master:
 ![JNLP port](./media/jnlp-port.png)
 
